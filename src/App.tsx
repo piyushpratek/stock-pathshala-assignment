@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import ClassListPage from './components/ClassListPage';
 import OTPPage from './components/OtpPage';
+import "./App.css"
 
 function App() {
   return (
