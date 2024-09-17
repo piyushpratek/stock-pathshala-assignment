@@ -44,23 +44,19 @@ const ClassListPage = () => {
     getClasses();
   }, [token]);
 
-  // if (loading) {
-  //   return (
-  //     <div className="flex flex-col justify-center items-center py-3">
-  //       <h1 className='text-bold text-2xl font-extrabold py-3'>Live Classes</h1>
-  //       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-  //         {Array(6).fill(0).map((_, index) => (
-  //           <li key={index} className="max-w-sm rounded overflow-hidden shadow-lg">
-  //             <ShimmerEffect />
-  //           </li>
-  //         ))}
-  //       </ul>
-  //     </div>
-  //   );
-  // }
-
   if (loading) {
-    return <ShimmerEffect />
+    return (
+      <div className="flex flex-col justify-center items-center py-3">
+        <h1 className='text-bold text-2xl font-extrabold py-3'>Live Classes</h1>
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {Array(6).fill(0).map((_, index) => (
+            <li key={index} className="max-w-sm rounded overflow-hidden shadow-lg">
+              <ShimmerEffect />
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
   }
 
   return (

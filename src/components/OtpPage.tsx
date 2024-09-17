@@ -15,7 +15,7 @@ const OTPPage = () => {
       const token = response.data.token;
 
       if (token) {
-        // Storing the token in localStorage
+        // Storing token in localStorage
         localStorage.setItem('token', token);
         // console.log('Token saved:', token);
         navigate('/classes');
